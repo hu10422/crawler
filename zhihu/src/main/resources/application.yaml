@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev #切换不同环境的配置信息
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+  jedis:
+    host: data.lc
+    port: 6379
+    password: 5eigsbjo958
+  data:
+    mongodb:
+      uri: mongodb://zhihu:zhihu123@data.lc:27017/zhihu
+
+proxy.page.proxy.queueName: zhihu-proxy-page-proxy-list
+target.page.proxy.queueName: zhihu-page-proxy-list
